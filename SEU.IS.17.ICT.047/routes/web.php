@@ -22,3 +22,7 @@ Route::view('form', 'form');
 Route::get('insert', [insert::class,'add']);
 
 Route::get('detail', [insert::class,'detail']);
+
+Route::get('delete/{name}', [insert::class,'delete']);
+
+Route::get('edit/{name}', [insert::class,'edit']);
